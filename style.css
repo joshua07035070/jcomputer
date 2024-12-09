@@ -1,0 +1,143 @@
+body{
+    background-color: #ECEFF1;
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+/* header section starts here */
+header{
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blue;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 70px;
+}
+
+#check{
+    display: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+}
+.logo h1{
+    font-size: 28px;
+    line-height: 25px;
+    
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.links a{
+    color: white;
+    padding: 7px 13px;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-size: 20px;
+} 
+
+.checkbtn{
+    display: none;
+
+}
+/* main section starts here */
+
+.images img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.main{
+    padding: 0px 30px;
+    padding-bottom: 25px;
+}
+
+span{
+    color: darkblue ;
+}
+
+.images{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer-top{
+    display: flex;
+
+
+}
+.footer-left{
+    padding-top: 100px;
+    color: red;
+}
+.footer-right img{
+    width: 630px;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom:100px ;
+    
+}
+
+/* main section ends here */
+/* media quary and responsive design starts here */
+@media(max-width: 639px){
+    .links{
+        position: fixed;
+        top: 70px;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .links a{
+        display: block;
+        margin: 50px 0;
+        line-height: 25;
+    }
+    .checkbtn{
+        display: flex;
+        color: #ffcc29;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    /* css subsequent-sibling (~) cominator */
+
+    /* #check{
+        display: block;
+    } */
+     #check:checked ~ .links{
+        left: 0;
+     }
+     .images img{
+        width: 100%;
+        height: 300px;
+     }
+     .logo h1{
+        font-size: 30px;
+     }
+}
