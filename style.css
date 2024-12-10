@@ -45,12 +45,20 @@ nav{
 }
 
 .links a{
-    color: white;
     padding: 7px 13px;
     border-radius: 3px;
+} 
+
+a{
+    color: white;
     margin-right: 10px;
     font-size: 20px;
-} 
+}
+
+.links a.active, a:hover{
+    background: blue;
+    transition: .5s;
+}
 
 .checkbtn{
     display: none;
@@ -75,8 +83,8 @@ span{
     flex-wrap: wrap;
     }
 .images img{
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
 }
 /* main section ends here */
