@@ -15,7 +15,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: lightblue;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
@@ -58,26 +58,30 @@ nav{
 }
 /* main section starts here */
 
-.images img{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.main{
+main{
     padding: 0px 30px;
     padding-bottom: 25px;
+
 }
 
 span{
-    color: darkblue ;
+    color: #003e8f ;
+    font-weight: bold;
 }
 
 .images{
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    }
+.images img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
+/* main section ends here */
+
+    /* footer section starts here */
 footer{
     display: flex;
     flex-direction: column;
@@ -85,22 +89,57 @@ footer{
 }
 .footer-top{
     display: flex;
+    padding: 20px;
+    align-items: center;
 
 
 }
 .footer-left{
-    padding-top: 100px;
-    color: red;
+    width: 50%;
+    height: 90%;
 }
-.footer-right img{
-    width: 630px;
-    height: 400px;
-    object-fit: cover;
-    margin-bottom:100px ;
+.footer-right{
+    width: 50%;
+    height: 45vh;
     
 }
 
-/* main section ends here */
+.footer-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer-top{
+    background-color:lightblue;
+    display: flex;
+}
+
+.footer-left{
+    padding: 20px;
+    width: 50%;
+    height: 45vh;
+
+}
+
+.trust{
+    color: rgb(145, 151, 146);
+    font-weight: bold;
+}
+
+.lunch{
+    color: white;
+}
+
+.footer-bottom{
+    height: 10vh;
+    background-color: #b7c7d1;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    color: white;
+}
+/* footer section ends here */
+
 /* media quary and responsive design starts here */
 @media(max-width: 639px){
     .links{
@@ -115,8 +154,8 @@ footer{
     }
     .links a{
         display: block;
-        margin: 50px 0;
-        line-height: 25;
+        margin: 50px 0px;
+        line-height: 25px;
     }
     .checkbtn{
         display: flex;
@@ -125,7 +164,7 @@ footer{
         margin-left: 20px;
         margin-right: 20px;
     }
-    /* css subsequent-sibling (~) cominator */
+    /* css subsequent-sibling (~) combinator */
 
     /* #check{
         display: block;
@@ -140,4 +179,95 @@ footer{
      .logo h1{
         font-size: 30px;
      }
+     .footer-top{
+        display: flex;
+        flex-wrap: wrap;
+     }
+     
+     .footer-left{
+        width: 100%;
+        height: 100%;
+     }
+}
+
+@media (640px <= width <=767px){
+    .images img{
+        width: 47%;
+        height: 300px;
+    }
+    .images{
+        display: flex;
+        flex-wrap:wrap;
+        gap: 33px;
+    }
+    .trust{
+        color: blue;
+        font-weight: bold;
+    }
+}
+
+@media (768 <= width <= 1023){
+    .images img{
+        width: 30%;
+        height: 200px;
+    }
+    .images{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 33px;
+    }
+    .trust{
+        color:  rgb(145, 151, 146);
+        font-weight: bold;
+
+    }
+}
+
+@media (1024px <= width <=1279px){
+    .images img{
+        width: 22%;
+        height: 200px;
+    }
+    .images{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+    .trust{
+        color:  rgb(145, 151, 146);
+        font-weight: bold;
+    }
+    
+}
+
+@media (1280px <= width 1535px){
+    .images img{
+        width: 15%;
+        height: 200px;
+    }
+    .images{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .trust{
+        color:  rgb(145, 151, 146);
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 1536px){
+    .images img{
+        width: 12%;
+        height: 200px;
+    }
+    .images{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 33px;
+    }
+    .trust{
+        color:  rgb(145, 151, 146);
+        font-weight: bold;
+    }
 }
