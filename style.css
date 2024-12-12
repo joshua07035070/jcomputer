@@ -88,6 +88,46 @@ span{
     object-fit: cover;
 }
 /* main section ends here */
+/* counter starts */
+.counter{
+    display: flex;
+    flex-direction: column;
+    background-color: #1A2E05;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 0 40px 0 40px;
+    padding-bottom: 20px;
+    color: #559116;
+}
+
+.counter h1{
+    padding: 0 20px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 5px;
+    background-color: #559116;
+    border-radius: 5px;
+}
+
+.label{
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #95d650;
+}
+
+button{
+    padding: 5px;
+    font: bold;
+    font-size: 15px;
+}
+
+/* counter ends */
 
     /* footer section starts here */
 footer{
